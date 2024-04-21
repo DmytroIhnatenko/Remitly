@@ -10,23 +10,3 @@ This simple **JavaScript** utility verifies whether an input JSON data conforms 
 4. Edit the `input.json` file with your desired JSON data.
 5. Run `node index.js` to execute the verification.
 
-## Example Input JSON
-
-```json
-{
-    "PolicyName": "custom",
-    "PolicyDocument": {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "CustomAccess",
-                "Effect": "Allow",
-                "Action": [
-                    "s3:GetObject",
-                    "s3:PutObject"
-                ],
-                "Resource": "arn:aws:s3:::my-bucket/*"
-            }
-        ]
-    }
-}
